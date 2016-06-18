@@ -2,13 +2,15 @@
 `react`进度球组件
 ## 使用方法
 ### 基本使用
-    ReactDOM.render(<ProgressBall />, document.querySelector(selector));
+#### 不做任何配置
+      ReactDOM.render(<ProgressBall />, document.querySelector(selector));
 如上，只显示一个带红色边框的直径为`22px`的圆，如果需要改变大小，需要进行配置：
+#### 设置进度球的大小
     let config = {
       size: '100px'
     };
     ReactDOM.render(<ProgressBall config={config}/>, document.querySelector(selector));
-上面都没有设置进度值，所以显示的都是一个圆，如下设置可以得到一个基本的进度球
+#### 设置进度值
     let config = {
       size: '100px',
       percent: 0.5
