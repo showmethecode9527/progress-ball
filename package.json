@@ -1,0 +1,45 @@
+{
+  "name": "progress-ball",
+  "version": "0.0.1",
+  "description": "progress ball by react",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "showmethecode9527",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/showmethecode9527/progress-ball.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "bower-webpack-plugin": "^0.1.9",
+    "copyfiles": "^0.2.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "jsx-loader": "^0.13.2",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^0.9.1",
+    "react-addons-test-utils": "^15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

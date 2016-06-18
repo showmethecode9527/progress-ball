@@ -1,0 +1,50 @@
+/* 进度球的基本样式文件 */
+@size: 20px;
+@bgColor: #f0f0f0;
+@borderColor: #d9534f;
+.progress-ball-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+    width: @size;
+    height: @size;
+    background: @bgColor;
+    border: 1px solid @borderColor;
+    border-radius: 50%;
+    position: relative;
+}
+/* 背景图 */
+@bgImage: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+.progress-ball-wrapper > .progress-ball {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @size - 2;
+    height: @size - 2;
+    background-color: @borderColor;
+    background-image: @bgImage;
+    background-size: 8px 8px;
+    border-radius: 50%;
+    clip: rect(0, 18px, 18px, 0);
+    animation: progressBall 2s linear infinite;
+}
+@textHeight: 16px;
+.progress-ball-wrapper > .progress-text {
+    display: block;
+    width: 100%;
+    height: @textHeight;
+    line-height: @textHeight;
+    margin-top: -@textHeight / 2;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Yahei Consolas Hybrid", "Consolas", "Source Code Pro", "Monaco", "微软雅黑", "Microsoft Yahei", "Times New Roman";
+    position: absolute;
+    top: 50%;
+}
+@keyframes progressBall {
+    from {
+        background-position: 40px 0;
+    } to {
+        background-position: 0 0;
+    }
+}
