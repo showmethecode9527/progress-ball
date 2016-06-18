@@ -24,4 +24,4 @@
       textHeight: '16px'  // 进度值容器的高, 默认值为'16px'
       textColor: '#fff'   // 进度值的文字颜色(默认值为'#fff', 当且仅当showText为true时生效)
     };
-    ReactDOM.render(<ProgressBall />, document.querySelector('#test'));
+    ReactDOM.render(<ProgressBall config={config}/>, document.querySelector('#test'));
